@@ -1,0 +1,152 @@
+$pozadie: linear-gradient(36deg,  pink, orange, violet, purple);
+$pozadie_obratene: linear-gradient(36deg,  purple, violet, orange, pink);
+
+header {
+    width: 100%;
+    background: rgb(40, 40, 40);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 5vw;
+    img {
+        height: 17vw;
+        margin-left: 1vw;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: end;
+        align-content: center;
+        grid-gap: 5vw;
+        margin-right: 3vw;
+        margin-left: 25vw;
+        a {
+            padding: 1.2vw;
+            background: rgb(40, 40, 40);
+            text-decoration: none;
+            border: 3px solid rgba(172, 0, 172, 0.9);
+            color: rgba(172, 0, 172, 0.9);
+            border-radius: 6px;
+            text-align: center;
+            font-size: 2vw;
+            &:hover {
+                background: rgba(172, 0, 172, 0.9);
+                color: rgb(40, 40, 40);
+            }
+        }
+    }
+}
+
+
+
+body {
+    display: grid;
+    grid-template-rows: 19vw 1fr auto;
+    padding: 0;
+    margin: 0;
+    background: $pozadie;
+    font-family: calibri;
+    background-attachment: fixed;
+}
+
+main {
+    border-radius: 3vw;
+    width: 60vw;
+    background: rgb(40, 40, 40);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 3vw;
+    section {
+        div {
+            background: $pozadie;
+            width: 25vw;
+            height: 6px;
+            border-radius: 3px;
+            &:hover {
+                background: $pozadie_obratene;
+            }
+        }
+        p {
+            font-size: 1.2vw;
+        }
+        h2 {
+            font-size: 2vw;
+        }
+    }
+    #ponuka {
+        background: $pozadie;
+        width: 25vw;
+        height: 6px;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background: $pozadie_obratene;
+        }
+    }
+    #center {
+        text-align: center;
+        font-size: 2vw;
+    }
+    div.uvod {
+        text-align: center;
+        margin-bottom: 7vw;
+        font-size: 1.2vw;
+        h1 {
+            font-size: 7vw;
+            margin: 0;
+        }
+    }
+    .right {
+        text-align: right;
+    }
+    .right_div {
+        float: right;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        grid-template-rows: auto;
+        column-gap: 4%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        article {
+            background-color: rgb(20, 20, 20);
+            padding: 1.5vw;
+            border-radius: 18px;
+            text-align: justify;
+            div {
+                background: $pozadie;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                &:hover {
+                    background: $pozadie_obratene;
+                }
+            }
+            img {
+                display: block;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+footer {
+    background: rgb(40, 40, 40);
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 2vw;
+}
+
+header, footer {
+    padding: 1%;
+}
+/* minmax(), grid-auto-rows, grid-column, grid-row*/
