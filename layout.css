@@ -169,14 +169,14 @@ header, footer {
 
 @media screen and (min-width: 530px) {
   main {
-    width: 80vw;
+    width: 75vw;
     font-size: large;
   }
 }
 
 @media screen and (min-width: 710px) {
   main {
-    width: 80vw;
+    width: 75vw;
     font-size: large;
   }
 }
@@ -197,7 +197,7 @@ header, footer {
 
 @media screen and (min-width: 1500px) {
   main {
-    width: 85vw;
+    width: 90vw;
     font-size: large;
   }
 }
