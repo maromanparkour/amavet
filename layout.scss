@@ -97,7 +97,7 @@ main {
     }
     .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         grid-template-rows: auto;
         column-gap: 4%;
         row-gap: 2%;
@@ -166,6 +166,13 @@ header, footer {
 }
 
 @media screen and (min-width: 950px) {
+    main {
+        width: 75vw;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 950px) {
     main {
         width: 75vw;
         font-size: large;

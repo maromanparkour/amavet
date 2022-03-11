@@ -113,8 +113,8 @@ main .right {
 main .cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(190px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   -webkit-column-gap: 4%;
@@ -189,6 +189,13 @@ header, footer {
 }
 
 @media screen and (min-width: 950px) {
+  main {
+    width: 75vw;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 950px) {
   main {
     width: 75vw;
     font-size: large;
