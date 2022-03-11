@@ -165,6 +165,13 @@ header, footer {
     }
 }
 
+@media screen and (min-width: 600px) {
+    main {
+        width: 80vw;
+        font-size: large;
+    }
+}
+
 @media screen and (min-width: 950px) {
     main {
         width: 80vw;
