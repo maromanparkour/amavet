@@ -145,7 +145,7 @@ header, footer {
     padding: 1.5vw;
 }
 
-//Mobil vyska
+//Mobil vyska 720
 @media screen and (min-width: 700px) {
     main {
         width: 85vw;
@@ -153,8 +153,8 @@ header, footer {
     }
 }
 
-//Mobil sirka
-@media screen and (min-width: 1200px) {
+//Mobil sirka 1600
+@media screen and (min-width: 1000px) {
     main {
         width: 90vw;
         font-size: larger;
@@ -162,15 +162,15 @@ header, footer {
 }
 
 
-//Tablet vyska
+//Tablet vyska 540
 @media screen and (min-width: 500px) {
     main {
-        width: 75vw;
+        width: 85vw;
         font-size: large;
     }
 }
 
-//Tablet sirka
+//Tablet sirka 960
 @media screen and (min-width: 950px) {
     main {
         width: 80vw;
