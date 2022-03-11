@@ -176,28 +176,28 @@ header, footer {
 
 @media screen and (min-width: 710px) {
   main {
-    width: 75vw;
+    width: 55vw;
     font-size: large;
   }
 }
 
 @media screen and (min-width: 950px) {
   main {
-    width: 85vw;
+    width: 75vw;
     font-size: large;
   }
 }
 
 @media screen and (min-width: 1300px) {
   main {
-    width: 70vw;
+    width: 60vw;
     font-size: large;
   }
 }
 
 @media screen and (min-width: 1500px) {
   main {
-    width: 90vw;
+    width: 80vw;
     font-size: large;
   }
 }
