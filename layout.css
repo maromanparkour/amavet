@@ -168,23 +168,29 @@ header, footer {
   padding: 1.5vw;
 }
 
-@media screen and (min-width: 500px) {
+/*
+notebook 1366 => normal
+tablet sirka 960
+mobil vyska 720
+tablet vyska 540
+*/
+@media screen and (max-width: 1300px) {
   main {
-    width: 90vw;
+    width: 85vw;
     font-size: large;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 950px) {
   main {
-    width: 90vw;
+    width: 80vw;
     font-size: large;
   }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 710px) {
   main {
-    width: 90vw;
+    width: 80vw;
     font-size: large;
   }
 }

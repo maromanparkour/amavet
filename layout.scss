@@ -145,29 +145,32 @@ header, footer {
     padding: 1.5vw;
 }
 
-//Tablet vyska 540
-@media screen and (min-width: 500px) {
+/*
+notebook 1366 => normal
+tablet sirka 960
+mobil vyska 720
+tablet vyska 540
+*/
+
+@media screen and (max-width: 1300px) {
     main {
-        width: 90vw; //75
+        width: 85vw;
         font-size: large;
     }
 }
 
-//Mobil vyska 720
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 950px) {
     main {
-        width: 90vw;  //85
+        width: 80vw;
         font-size: large;
     }
 }
 
-//Tablet sirka 960
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 710px) {
     main {
-        width: 90vw; //80
+        width: 80vw;
         font-size: large;
     }
 }
-
 
 /* minmax(), grid-auto-rows, grid-column, grid-row*/
