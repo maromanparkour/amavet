@@ -145,22 +145,6 @@ header, footer {
     padding: 1.5vw;
 }
 
-//Mobil vyska 720
-@media screen and (max-width: 750px) {
-    main {
-        width: 85vw;
-        font-size: larger;
-    }
-}
-
-//Mobil sirka 1600
-@media screen and (max-width: 1700px) {
-    main {
-        width: 90vw;
-        font-size: larger;
-    }
-}
-
 //Tablet vyska 540
 @media screen and (min-width: 500px) {
     main {
