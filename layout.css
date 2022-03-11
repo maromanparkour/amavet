@@ -168,17 +168,24 @@ header, footer {
   padding: 1.5vw;
 }
 
+@media screen and (min-width: 700px) {
+  main {
+    width: 85vw;
+    font-size: larger;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 90vw;
+    font-size: larger;
+  }
+}
+
 @media screen and (min-width: 500px) {
   main {
     width: 75vw;
     font-size: large;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  main {
-    width: 95vw;
-    font-size: larger;
   }
 }
 
