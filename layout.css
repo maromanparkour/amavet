@@ -174,15 +174,15 @@ notebook 1366 => normal
 tablet sirka 960
 mobil vyska 720
 tablet vyska 540
-
-
+*/
 @media screen and (max-width: 1300px) {
-    main {
-        width: 85vw;
-        font-size: large;
-    }
+  main {
+    width: 85vw;
+    font-size: large;
+  }
 }
 
+/*
 @media screen and (max-width: 950px) {
     main {
         width: 80vw;
