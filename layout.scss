@@ -145,6 +145,12 @@ header, footer {
     padding: 1.5vw;
 }
 
+@media screen and (min-width: 300px) {
+    main {
+        width: 75vw;
+        font-size: large;
+    }
+}
 
 //
 @media screen and (min-width: 530px) {
