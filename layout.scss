@@ -147,17 +147,11 @@ header, footer {
 
 /*
 notebook 1366 => normal
+
 tablet sirka 960
 mobil vyska 720
 tablet vyska 540
-*/
 
-@media screen and (max-width: 2000px) {
-    main {
-        width: 65vw;
-        font-size: large;
-    }
-}
 
 @media screen and (max-width: 1300px) {
     main {
