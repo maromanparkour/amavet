@@ -57,7 +57,6 @@ body {
 
 main {
   border-radius: 2.5vw;
-  width: 60vw;
   background: #282828;
   color: white;
   margin-left: auto;
@@ -168,33 +167,39 @@ header, footer {
   padding: 1.5vw;
 }
 
-/*
-notebook 1366 => normal
-
-tablet sirka 960
-mobil vyska 720
-tablet vyska 540
-*/
-/*
-@media screen and (max-width: 1300px) {
-    main {
-        width: 85vw;
-        font-size: large;
-    }
-}*/
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 530px) {
   main {
     width: 80vw;
     font-size: large;
   }
 }
 
-/*
-@media screen and (max-width: 710px) {
-    main {
-        width: 70vw;
-        font-size: large;
-    }
+@media screen and (min-width: 710px) {
+  main {
+    width: 80vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main {
+    width: 85vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    width: 70vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    width: 85vw;
+    font-size: large;
+  }
 }
 
 /* minmax(), grid-auto-rows, grid-column, grid-row*/
