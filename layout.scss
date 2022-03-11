@@ -148,7 +148,7 @@ header, footer {
 //Tablet vyska 540
 @media screen and (min-width: 500px) {
     main {
-        width: 75vw;
+        width: 90vw; //75
         font-size: large;
     }
 }
@@ -156,7 +156,7 @@ header, footer {
 //Mobil vyska 720
 @media screen and (min-width: 700px) {
     main {
-        width: 85vw;
+        width: 90vw;  //85
         font-size: large;
     }
 }
@@ -164,7 +164,7 @@ header, footer {
 //Tablet sirka 960
 @media screen and (min-width: 950px) {
     main {
-        width: 80vw;
+        width: 90vw; //80
         font-size: large;
     }
 }
