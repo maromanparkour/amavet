@@ -145,7 +145,7 @@ header, footer {
 }
 
 
-
+//
 @media screen and (min-width: 530px) {
     main {
         width: 75vw;
@@ -153,20 +153,20 @@ header, footer {
     }
 }
 
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 650px) {
     main {
         width: 55vw;
         font-size: large;
     }
 }
-
+//
 @media screen and (min-width: 950px) {
     main {
         width: 75vw;
         font-size: large;
     }
 }
-
+//
 @media screen and (min-width: 1300px) {
     main {
         width: 60vw;
