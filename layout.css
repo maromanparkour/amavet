@@ -176,7 +176,7 @@ header, footer {
 
 @media screen and (min-width: 650px) {
   main {
-    width: 55vw;
+    width: 85vw;
     font-size: large;
   }
 }
