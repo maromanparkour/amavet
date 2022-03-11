@@ -175,9 +175,9 @@ header, footer {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
   main {
-    width: 85vw;
+    width: 95vw;
     font-size: larger;
   }
 }
