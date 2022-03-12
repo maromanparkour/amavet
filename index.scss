@@ -201,6 +201,9 @@ header, footer {
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr);
         }
+        .cards-offer {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -212,6 +215,9 @@ header, footer {
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr)
         }
+        .cards-offer {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -221,6 +227,9 @@ header, footer {
         width: 85vw;
         font-size: large;
         .properties-button_pool {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .cards-offer {
             grid-template-columns: repeat(3, 1fr);
         }
     }
@@ -234,6 +243,9 @@ header, footer {
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
+        .cards-offer {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
@@ -245,6 +257,9 @@ header, footer {
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
+        .cards-offer {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
@@ -253,6 +268,12 @@ header, footer {
     main {
         width: 80vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .cards-offer {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
