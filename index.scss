@@ -1,0 +1,196 @@
+$pozadie: linear-gradient(36deg,  pink, orange, violet, purple);
+$pozadie_obratene: linear-gradient(36deg,  purple, violet, orange, pink);
+$purple: rgba(172, 0, 172, 0.9);
+
+header {
+    width: 100%;
+    height: 10vw;
+    background: rgb(40, 40, 40);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    img {
+        height: 8vw;
+        margin-left: 1vw;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: end;
+        align-content: center;
+        grid-gap: 5vw;
+        margin-right: 5vw;
+        margin-left: 25vw;
+        a {
+            padding: 1.2vw;
+            background: rgb(40, 40, 40);
+            text-decoration: none;
+            border: 3px solid orange;
+            color: orange;
+            border-radius: 6px;
+            text-align: center;
+            &:hover {
+                background: orange;
+                color: rgb(40, 40, 40);
+            }
+        }
+    }
+}
+
+
+
+body {
+    display: grid;
+    grid-template-rows: 19vw 1fr auto;
+    padding: 0;
+    margin: 0;
+    background: $pozadie;
+    font-family: calibri;
+    background-attachment: fixed;
+}
+
+main {
+    border-radius: 2.5vw;
+    background: rgb(40, 40, 40);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 3vw;
+    width: 85vw;
+    section {
+        div {
+            background: $pozadie;
+            width: 30vw;
+            height: 6px;  //1.2vw
+            border-radius: 3px;  //0.6vw
+            &:hover {
+                background: $pozadie_obratene;
+            }
+        }
+    }
+    #center-offer_div {
+        background: $pozadie;
+        width: 30vw;
+        height: 6px;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background: $pozadie_obratene;
+        }
+    }
+    #center-offer_text {
+        text-align: center;
+    }
+    .introdution {
+        text-align: center;
+        margin-bottom: 7vw;
+        h1 {
+            font-size: 8vw;
+            margin: 0;
+        }
+    }
+    .right {
+        text-align: right;
+        float: right;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-rows: auto;
+        column-gap: 4%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        article {
+            background-color: rgb(20, 20, 20);
+            padding: 1.5vw;
+            margin-bottom: 8%;
+            border-radius: 18px;
+            text-align: justify;
+            h3 {
+                text-align: center;
+                margin: 2%;
+            }
+            div {
+                background: $pozadie;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                &:hover {
+                    background: $pozadie_obratene;
+                }
+            }
+            img {
+                display: block;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+footer {
+    background: rgb(40, 40, 40);
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: x-large;
+}
+
+header, footer {
+    padding: 1.5vw;
+}
+
+//Mobil vyska
+@media screen and (min-width: 100px){
+    main {
+        width: 85vw;
+        font-size: large;
+    }
+}
+
+//Tablet vyska
+@media screen and (min-width: 530px) {
+    main {
+        width: 75vw;
+        font-size: large;
+    }
+}
+
+//Mobil sirka
+@media screen and (min-width: 650px) {
+    main {
+        width: 85vw;
+        font-size: large;
+    }
+}
+
+//Tablet sirka
+@media screen and (min-width: 950px) {
+    main {
+        width: 75vw;
+        font-size: large;
+    }
+}
+
+//Notebook
+@media screen and (min-width: 1300px) {
+    main {
+        width: 65vw;
+        font-size: large;
+    }
+}
+
+//
+@media screen and (min-width: 1500px) {
+    main {
+        width: 80vw;
+        font-size: large;
+    }
+}
+
+/* minmax(), grid-auto-rows, grid-column, grid-row*/

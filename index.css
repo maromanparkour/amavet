@@ -1,0 +1,214 @@
+header {
+  width: 100%;
+  height: 10vw;
+  background: #282828;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+header img {
+  height: 8vw;
+  margin-left: 1vw;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-gap: 5vw;
+  margin-right: 5vw;
+  margin-left: 25vw;
+}
+
+header nav a {
+  padding: 1.2vw;
+  background: #282828;
+  text-decoration: none;
+  border: 3px solid orange;
+  color: orange;
+  border-radius: 6px;
+  text-align: center;
+}
+
+header nav a:hover {
+  background: orange;
+  color: #282828;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 19vw 1fr auto;
+      grid-template-rows: 19vw 1fr auto;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(36deg, pink, orange, violet, purple);
+  font-family: calibri;
+  background-attachment: fixed;
+}
+
+main {
+  border-radius: 2.5vw;
+  background: #282828;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding: 3vw;
+  width: 85vw;
+}
+
+main section div {
+  background: linear-gradient(36deg, pink, orange, violet, purple);
+  width: 30vw;
+  height: 6px;
+  border-radius: 3px;
+}
+
+main section div:hover {
+  background: linear-gradient(36deg, purple, violet, orange, pink);
+}
+
+main #center-offer_div {
+  background: linear-gradient(36deg, pink, orange, violet, purple);
+  width: 30vw;
+  height: 6px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main #center-offer_div:hover {
+  background: linear-gradient(36deg, purple, violet, orange, pink);
+}
+
+main #center-offer_text {
+  text-align: center;
+}
+
+main .introdution {
+  text-align: center;
+  margin-bottom: 7vw;
+}
+
+main .introdution h1 {
+  font-size: 8vw;
+  margin: 0;
+}
+
+main .right {
+  text-align: right;
+  float: right;
+}
+
+main .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 4%;
+          column-gap: 4%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+main .cards article {
+  background-color: #141414;
+  padding: 1.5vw;
+  margin-bottom: 8%;
+  border-radius: 18px;
+  text-align: justify;
+}
+
+main .cards article h3 {
+  text-align: center;
+  margin: 2%;
+}
+
+main .cards article div {
+  background: linear-gradient(36deg, pink, orange, violet, purple);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+main .cards article div:hover {
+  background: linear-gradient(36deg, purple, violet, orange, pink);
+}
+
+main .cards article img {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background: #282828;
+  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: x-large;
+}
+
+header, footer {
+  padding: 1.5vw;
+}
+
+@media screen and (min-width: 100px) {
+  main {
+    width: 85vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  main {
+    width: 75vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  main {
+    width: 85vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main {
+    width: 75vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    width: 65vw;
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    width: 80vw;
+    font-size: large;
+  }
+}
+
+/* minmax(), grid-auto-rows, grid-column, grid-row*/
+/*# sourceMappingURL=index.css.map */
