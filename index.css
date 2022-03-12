@@ -171,6 +171,70 @@ main .center-properties_underline:hover {
   background: linear-gradient(36deg, purple, violet, orange, pink);
 }
 
+main .slideshow-prevnext_buttons .prev, main .slideshow-prevnext_buttons .next {
+  font-weight: bold;
+  font-size: larger;
+  color: black;
+  padding: 1.2vw;
+  border: 2px solid orange;
+  border-radius: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 1.4vw;
+}
+
+main .slideshow-prevnext_buttons .prev:hover, main .slideshow-prevnext_buttons .next:hover {
+  background: orange;
+  color: black;
+}
+
+main .slideshow-prevnext_buttons .prev {
+  float: left;
+  margin-left: 12vw;
+}
+
+main .slideshow-prevnext_buttons .next {
+  float: right;
+  margin-right: 12vw;
+}
+
+main .slideshow-container {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vw;
+  border-radius: 2vw;
+}
+
+main .slideshow-container .slideshow-caption_text {
+  width: 60vw;
+  text-align: center;
+  top: 73vw;
+  position: absolute;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 1.8vw;
+}
+
+main .slideshow-dot_pool {
+  margin: 2vw;
+}
+
+main .slideshow-dot_pool .slideshow-dot {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background: orange;
+  margin: 1vw;
+  display: inline-block;
+}
+
+main .invisible-slides {
+  display: none;
+}
+
 main .cards-offer {
   display: -ms-grid;
   display: grid;

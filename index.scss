@@ -143,6 +143,60 @@ main {
             background: $pozadie_obratene;
         }
     }
+    .slideshow-prevnext_buttons {
+        .prev, .next {
+            font-weight: bold;
+            font-size: larger;
+            color: black;
+            padding: 1.2vw;
+            border: 2px solid orange;
+            border-radius: 8px;
+            user-select: none;
+            margin-top: 1.4vw;
+            &:hover {
+                background: orange;
+                color: black;
+            }
+        }
+        .prev {
+            float: left;
+            margin-left: 12vw;
+        }
+        .next {
+            float: right;
+            margin-right: 12vw;
+        }
+    }
+    .slideshow-container {
+        width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vw;
+        border-radius: 2vw;
+        .slideshow-caption_text {
+            width: 60vw;
+            text-align: center;
+            top: 73vw;
+            position: absolute;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 1.8vw;
+        }
+    }
+    .slideshow-dot_pool {
+        margin: 2vw;
+        .slideshow-dot {
+            width: 2vw;
+            height: 2vw;
+            border-radius: 50%;
+            background: orange;
+            margin: 1vw;
+            display: inline-block;
+        }
+    }
+    .invisible-slides {
+        display: none;
+    }
     .cards-offer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
