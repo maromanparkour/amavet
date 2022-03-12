@@ -4,13 +4,12 @@ $purple: rgba(172, 0, 172, 0.9);
 
 header {
     width: 100%;
-    height: 10vw;
+    height: 9vw;
     background: rgb(40, 40, 40);
     display: grid;
     grid-template-columns: auto 1fr;
     img {
         height: 9vw;
-        margin-left: 1vw;
     }
     nav {
         display: grid;
@@ -19,7 +18,7 @@ header {
         align-content: center;
         grid-gap: 5vw;
         margin-right: 5vw;
-        margin-left: 25vw;
+        margin-left: 15vw;
         a {
             padding: 1.2vw;
             background: rgb(40, 40, 40);
@@ -28,6 +27,7 @@ header {
             color: orange;
             border-radius: 6px;
             text-align: center;
+            font-size: 20px;
             &:hover {
                 background: orange;
                 color: rgb(40, 40, 40);
@@ -59,7 +59,17 @@ main {
     padding: 3vw;
     width: 85vw;
     section {
-        div {
+        .main-text_underline {
+            background: $pozadie;
+            width: 30vw;
+            height: 6px;  //1.2vw
+            border-radius: 3px;  //0.6vw
+            &:hover {
+                background: $pozadie_obratene;
+            }
+        }
+        .main-text_underline_right {
+            float: right;
             background: $pozadie;
             width: 30vw;
             height: 6px;  //1.2vw
@@ -69,7 +79,7 @@ main {
             }
         }
     }
-    #center-offer_div {
+    .center-offer_underline {
         background: $pozadie;
         width: 30vw;
         height: 6px;
@@ -80,8 +90,9 @@ main {
             background: $pozadie_obratene;
         }
     }
-    #center-offer_text {
+    .center-offer_text {
         text-align: center;
+        margin-top: 8vw;
     }
     .introdution {
         text-align: center;
@@ -91,11 +102,46 @@ main {
             margin: 0;
         }
     }
-    .right {
+    .main-text_align_right {
         text-align: right;
-        float: right;
     }
-    .cards {
+    .properties-button_pool {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-content: stretch;
+        .switch {
+            border: 2px solid orange;
+            border-radius: 6px;
+            padding: 1vw;
+            margin-right: 0.4vw;
+            background: rgb(40, 40, 40);
+            color: white;
+            &:hover {
+                background: orange;
+                color: black;
+            }
+        }
+    }
+    .properties-text_content {
+        text-align: center;
+    }
+    .center-properties_h2 {
+        text-align: center;
+        margin-top: 5vw;
+    }
+    .center-properties_underline {
+        background: $pozadie;
+        width: 30vw;
+        height: 6px;
+        border-radius: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background: $pozadie_obratene;
+        }
+    }
+    .cards-offer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         grid-template-rows: auto;
@@ -110,11 +156,11 @@ main {
             margin-bottom: 8%;
             border-radius: 18px;
             text-align: justify;
-            h3 {
+            .card-offer_h3 {
                 text-align: center;
                 margin: 2%;
             }
-            div {
+            .card-offer_underline {
                 background: $pozadie;
                 width: 100%;
                 height: 4px;
@@ -123,7 +169,7 @@ main {
                     background: $pozadie_obratene;
                 }
             }
-            img {
+            .card-offer_image {
                 display: block;
                 width: 60%;
                 margin-left: auto;
