@@ -9,7 +9,7 @@ header {
 }
 
 header img {
-  height: 8vw;
+  height: 9vw;
   margin-left: 1vw;
 }
 
@@ -18,9 +18,9 @@ header nav {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -ms-flex-line-pack: center;
       align-content: center;
   grid-gap: 5vw;
