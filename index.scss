@@ -108,15 +108,17 @@ main {
     .properties-button_pool {
         margin-top: 2vw;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        align-content: stretch;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-rows: auto;
+        column-gap: 0.5vw;
+        row-gap: 0.5vw;
         .switch {
             border: 2px solid orange;
             border-radius: 6px;
             padding: 1vw;
-            margin-right: 0.4vw;
             background: rgb(40, 40, 40);
             color: white;
+            margin-bottom: 0.4vw;
             &:hover {
                 background: orange;
                 color: black;

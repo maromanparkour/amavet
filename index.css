@@ -126,19 +126,22 @@ main .properties-button_pool {
   margin-top: 2vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 0.5vw;
+          column-gap: 0.5vw;
+  row-gap: 0.5vw;
 }
 
 main .properties-button_pool .switch {
   border: 2px solid orange;
   border-radius: 6px;
   padding: 1vw;
-  margin-right: 0.4vw;
   background: #282828;
   color: white;
+  margin-bottom: 0.4vw;
 }
 
 main .properties-button_pool .switch:hover {
