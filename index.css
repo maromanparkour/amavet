@@ -229,10 +229,14 @@ header, footer {
   padding: 1.5vw;
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 250px) {
   main {
     width: 85vw;
     font-size: large;
+  }
+  main .properties-button_pool {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -241,12 +245,20 @@ header, footer {
     width: 75vw;
     font-size: large;
   }
+  main .properties-button_pool {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 650px) {
   main {
     width: 85vw;
     font-size: large;
+  }
+  main .properties-button_pool {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -255,12 +267,20 @@ header, footer {
     width: 75vw;
     font-size: large;
   }
+  main .properties-button_pool {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 @media screen and (min-width: 1300px) {
   main {
     width: 65vw;
     font-size: large;
+  }
+  main .properties-button_pool {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
 }
 

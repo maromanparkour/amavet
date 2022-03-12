@@ -194,10 +194,13 @@ header, footer {
 }
 
 //Mobil vyska
-@media screen and (min-width: 100px){
+@media screen and (min-width: 250px){
     main {
         width: 85vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
@@ -206,6 +209,9 @@ header, footer {
     main {
         width: 75vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(2, 1fr)
+        }
     }
 }
 
@@ -214,6 +220,9 @@ header, footer {
     main {
         width: 85vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
 
@@ -222,6 +231,9 @@ header, footer {
     main {
         width: 75vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 }
 
@@ -230,6 +242,9 @@ header, footer {
     main {
         width: 65vw;
         font-size: large;
+        .properties-button_pool {
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 }
 
