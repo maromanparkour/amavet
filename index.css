@@ -27,7 +27,7 @@ header nav {
   margin-left: 15vw;
 }
 
-header nav a {
+header nav a, header nav button {
   padding: 1.2vw;
   background: #282828;
   text-decoration: none;
@@ -38,9 +38,19 @@ header nav a {
   font-size: 20px;
 }
 
-header nav a:hover {
-  background: orange;
-  color: #282828;
+header nav a:hover, header nav button:hover {
+  background: rgba(255, 166, 0, 0.5);
+  color: black;
+}
+
+header nav a:active, header nav button:active {
+  background: red;
+  border: 3px solid red;
+}
+
+header nav .navbar-a_active {
+  background-color: orange;
+  color: black;
 }
 
 body {
@@ -55,6 +65,110 @@ body {
   background-attachment: fixed;
 }
 
+body .modal-bg_fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body .modal-bg_fade .contact-window {
+  position: absolute;
+  top: 20vw;
+  left: 6vw;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #282828;
+  padding: 4vw;
+  border-radius: 2vw;
+}
+
+body .modal-bg_fade .contact-window .close-button {
+  cursor: pointer;
+  font-size: 5vw;
+  position: relative;
+  color: orange;
+  float: right;
+}
+
+body .modal-bg_fade .contact-window .close-button:hover {
+  color: red;
+}
+
+body .modal-bg_fade .contact-window .contact-window_underline {
+  width: 30vw;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(36deg, pink, orange, violet, purple);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .modal-bg_fade .contact-window .contact-window_underline:hover {
+  background: linear-gradient(36deg, purple, violet, orange, pink);
+}
+
+body .modal-bg_fade .contact-window .contact-h2 {
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+}
+
+body .modal-bg_fade .contact-window .contact-p {
+  color: white;
+  font-size: 1.8vw;
+}
+
+body .modal-bg_fade .contact-window .contact-p_center {
+  color: white;
+  font-size: 1.8vw;
+  text-align: center;
+}
+
+body .modal-bg_fade .contact-window .contact-avatar_pool {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (15vw)[2];
+      grid-template-columns: repeat(2, 15vw);
+  -webkit-column-gap: 6vw;
+          column-gap: 6vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .modal-bg_fade .contact-window .contact-avatar_pool .my-photo_avatar {
+  width: 15vw;
+  height: 15vw;
+  background-color: white;
+  margin: 1vw;
+  border-radius: 50%;
+}
+
+body .modal-bg_fade .contact-window .social-media_buttons {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10vw)[4];
+      grid-template-columns: repeat(4, 10vw);
+  -webkit-column-gap: 4vw;
+          column-gap: 4vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3vw;
+}
+
+body .modal-bg_fade .contact-window .social-media_buttons img {
+  width: 10vw;
+}
+
 main {
   border-radius: 2.5vw;
   background: #282828;
@@ -65,6 +179,78 @@ main {
   margin-bottom: 5vw;
   padding: 3vw;
   width: 85vw;
+}
+
+main .download-pool {
+  width: 1fr;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
+  margin-top: 2vw;
+  padding: 1vw;
+}
+
+main .download-pool .download-button {
+  width: 100%;
+  padding: 1vw;
+  background: #282828;
+  color: white;
+  border: 2px solid orange;
+  border-radius: 3px;
+}
+
+main .download-pool .download-button:hover {
+  background: rgba(255, 166, 0, 0.5);
+  color: black;
+}
+
+main .form-data_pool {
+  width: 90%;
+  padding: 2vw;
+  margin: 2vw;
+}
+
+main .form-data_pool .input-textarea {
+  height: 8vw;
+}
+
+main .form-data_pool .form-input_field {
+  border: 2px solid orange;
+  border-radius: 3px;
+  background: #282828;
+  padding: 0.5vw;
+  width: 55vw;
+  color: white;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+main .form-data_pool .form-input_selection {
+  width: 20vw;
+}
+
+main .form-data_pool .input-form_button {
+  width: 56.5vw;
+  padding: 0.5vw;
+  margin-top: 2vw;
+  border: 2px solid orange;
+  border-radius: 3px;
+  background: #282828;
+  color: white;
+}
+
+main .form-data_pool .input-form_button:hover {
+  background: rgba(255, 166, 0, 0.5);
+  color: white;
+}
+
+main .form-data_pool .input-form_button:active {
+  background: red;
+  border: 2px solid red;
+  color: black;
 }
 
 main section .main-text_underline {
@@ -142,9 +328,20 @@ main .properties-button_pool .switch {
   background: #282828;
   color: white;
   margin-bottom: 0.4vw;
+  font-size: 15px;
 }
 
 main .properties-button_pool .switch:hover {
+  background: rgba(255, 166, 0, 0.5);
+  color: black;
+}
+
+main .properties-button_pool .switch:active {
+  background: red;
+  border: 2px solid red;
+}
+
+main .properties-button_pool .switch-active_button {
   background: orange;
   color: black;
 }
@@ -153,12 +350,16 @@ main .properties-text_content {
   text-align: center;
 }
 
-main .center-properties_h2 {
+main .properties-text_content .properties-tab_content {
+  display: none;
+}
+
+main .center-properties_h2, main .center-form_h2 {
   text-align: center;
   margin-top: 5vw;
 }
 
-main .center-properties_underline {
+main .center-properties_underline, main .center-form_underline {
   background: linear-gradient(36deg, pink, orange, violet, purple);
   width: 30vw;
   height: 6px;
@@ -167,22 +368,24 @@ main .center-properties_underline {
   margin-right: auto;
 }
 
-main .center-properties_underline:hover {
+main .center-properties_underline:hover, main .center-form_underline:hover {
   background: linear-gradient(36deg, purple, violet, orange, pink);
 }
 
 main .slideshow-prevnext_buttons .prev, main .slideshow-prevnext_buttons .next {
   font-weight: bold;
-  font-size: larger;
-  color: black;
-  padding: 1.2vw;
+  font-size: 1.8vw;
+  color: orange;
+  padding: 0.5vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
   border: 2px solid orange;
   border-radius: 8px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-top: 1.4vw;
+  margin-top: 0.7vw;
 }
 
 main .slideshow-prevnext_buttons .prev:hover, main .slideshow-prevnext_buttons .next:hover {
@@ -192,47 +395,71 @@ main .slideshow-prevnext_buttons .prev:hover, main .slideshow-prevnext_buttons .
 
 main .slideshow-prevnext_buttons .prev {
   float: left;
-  margin-left: 12vw;
+  margin-left: 10vw;
 }
 
 main .slideshow-prevnext_buttons .next {
   float: right;
-  margin-right: 12vw;
+  margin-right: 10vw;
 }
 
 main .slideshow-container {
-  width: 60vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vw;
   border-radius: 2vw;
+  margin-top: 3vw;
+  padding-bottom: 0;
 }
 
 main .slideshow-container .slideshow-caption_text {
-  width: 60vw;
+  width: 100%;
   text-align: center;
-  top: 73vw;
-  position: absolute;
+  top: -59px;
+  position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 1.8vw;
+  color: white;
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 0 0 2vw 2vw;
 }
 
 main .slideshow-dot_pool {
-  margin: 2vw;
+  margin: 1vw;
 }
 
 main .slideshow-dot_pool .slideshow-dot {
-  width: 2vw;
-  height: 2vw;
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 2px solid orange;
   border-radius: 50%;
-  background: orange;
+  background: #282828;
   margin: 1vw;
   display: inline-block;
 }
 
+main .slideshow-dot_pool .slideshow-dot:hover {
+  background: rgba(255, 166, 0, 0.5);
+  border: 2px solid rgba(255, 166, 0, 0.5);
+}
+
+main .slideshow-dot_pool .slideshow-dot:active {
+  background-color: red;
+  border: 2px solid red;
+}
+
+main .slideshow-dot_pool .slideshow-dot_active {
+  background: orange;
+}
+
 main .invisible-slides {
   display: none;
+}
+
+main .invisible-slides img {
+  width: 100%;
+  border-radius: 2vw;
 }
 
 main .cards-offer {
@@ -258,6 +485,11 @@ main .cards-offer article {
   text-align: justify;
 }
 
+main .cards-offer article .img-silouette {
+  width: 100%;
+  margin-top: 2vw;
+}
+
 main .cards-offer article .card-offer_h3 {
   text-align: center;
   margin: 2%;
@@ -275,8 +507,9 @@ main .cards-offer article .card-offer_underline:hover {
 }
 
 main .cards-offer article .card-offer_image {
+  margin-top: 2vw;
   display: block;
-  width: 60%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }

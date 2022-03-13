@@ -5,19 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>O parkoure</title>
 </head>
 <body>
 
     <header>
-        <img src="parkour1.png" alt="parkour">
+        <a href="index.html"><img src="parkour1.png" alt="parkour"></a>
         <nav>
             <a href="index.html">Úvod</a>
-            <a href="description.html">Popis</a>
+            <a href="description.html" class="navbar-a_active">Popis</a>
             <a href="galery.html">Galéria</a>
-            <a href="">Kontakt</a>
+            <button onclick="showModal()">Kontakt</button>
         </nav>
     </header>
+
+    <div class="modal-bg_fade" id="contact-modal_win">
+        <div class="contact-window">
+            <span class="close-button" onclick="hideModal()">&times;</span>
+            <h2 class="contact-h2">Kontakt na mňa</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p">E-mail: marek.hornak@student.spseke.sk<br>Tel. č: 421 ??? ??? ???<br>Firma: Salamander Corporation<br>Sídlo: Bratislava</p>
+            <h2 class="contact-h2">Ja a moja firma</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p_center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+            </p>
+            <div class="contact-avatar_pool">
+                <div class="my-photo_avatar" style="background-image: url(marekos.png); background-size: cover;"></div>
+                <div class="my-photo_avatar" style="background-image: url(logo_salamander1.jpg); background-size: cover;"></div>
+            </div>
+            <h2 class="contact-h2">Sociálne odkazy</h2>
+            <div class="contact-window_underline"></div>
+            <div class="social-media_buttons">
+                <img src="facebook.png" alt="">
+                <img src="gmail.png" alt="">
+                <img src="youtube.png" alt="">
+                <img src="pinterest.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <main>
 
@@ -27,7 +58,7 @@
         </div>
 
         <section>
-            <h2>Ako to funguje</h2>
+            <h2>Folizofia</h2>
             <div class="main-text_underline"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam atque explicabo debitis pariatur commodi et nihil adipisci voluptates!
@@ -39,7 +70,7 @@
         </section>
 
         <section class="main-text_align_right">
-            <h2>Ako to funguje</h2>
+            <h2>Prvky parkouru</h2>
             <div class="main-text_underline_right"></div>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -55,55 +86,130 @@
             <h2 class="center-properties_h2">Vlastnosti dobrého Traceura</h2>
             <div class="center-properties_underline"></div>
             <div class="properties-button_pool">
-                <button class="switch">Sila</button>
-                <button class="switch">Rýchlosť</button>
-                <button class="switch">Vytrvalosť</button>
-                <button class="switch">Dynamika</button>
-                <button class="switch">Balanc</button>
-                <button class="switch">Flexibilita</button>
+                <button class="switch" onclick="changeTab(1)">Sila</button>
+                <button class="switch" onclick="changeTab(2)">Rýchlosť</button>
+                <button class="switch" onclick="changeTab(3)">Vytrvalosť</button>
+                <button class="switch" onclick="changeTab(4)">Dynamika</button>
+                <button class="switch" onclick="changeTab(5)">Balanc</button>
+                <button class="switch" onclick="changeTab(6)">Flexibilita</button>
             </div>
 
             <div class="properties-text_content">
-                <h3>Sila</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Repellendus cumque reprehenderit at odit ullam in consectetur,
-                    ad odio corrupti omnis officia consequuntur optio, magnam
-                    iste itaque tenetur rerum tempore aut.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Repellendus cumque reprehenderit at odit ullam in consectetur,
-                    ad odio corrupti omnis officia consequuntur optio, magnam
-                    iste itaque tenetur rerum tempore aut.
-                </p>
+                <div class="properties-tab_content">
+                    <h3>Sila</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
+
+                <div class="properties-tab_content">
+                    <h3>Rýchlosť</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
+
+                <div class="properties-tab_content">
+                    <h3>Vytrvalosť</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
+
+                <div class="properties-tab_content">
+                    <h3>Dynamika</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
+
+                <div class="properties-tab_content">
+                    <h3>Balanc</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
+
+                <div class="properties-tab_content">
+                    <h3>Flexibilita</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Repellendus cumque reprehenderit at odit ullam in consectetur,
+                        ad odio corrupti omnis officia consequuntur optio, magnam
+                        iste itaque tenetur rerum tempore aut.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <h2 class="center-offer_text">Pozrite aj...</h2>
+        <h2 class="center-offer_text">Externé odkazy</h2>
         <div class="center-offer_underline"></div>
 
         <section class="cards-offer">
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">How-to parkour</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <a href="https://maromanparkour.github.io/parkour/"><img src="pk1.png" alt="parkour" class="card-offer_image img-silouette"></a>
             </article>
 
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">Parkour.sk</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <a href="https://www.parkour.sk/sk/"><img src="pk2.png" alt="parkour" class="card-offer_image img-silouette"></a>
             </article>
 
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">Parkour-traceurs</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <a href="https://maromanparkour.github.io/parkour-traceurs/index.html"><img src="pk3.png" alt="parkour" class="card-offer_image img-silouette"></a>
             </article>
         </section>
 
     </main>
 
     <footer>Webdesign &copy; Marek Horňak</footer>
+
+    <script src="index.js"></script>
+    <script>changeTab(1);</script>
     
 </body>
 </html>

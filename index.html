@@ -5,19 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Grid Layout</title>
+    <title>Parkour</title>
 </head>
 <body>
 
     <header>
-        <img src="parkour1.png" alt="parkour">
+        <a href="index.html"><img src="parkour1.png" alt="parkour"></a>
         <nav>
-            <a href="index.html">Úvod</a>
+            <a href="index.html" class="navbar-a_active">Úvod</a>
             <a href="description.html">Popis</a>
             <a href="galery.html">Galéria</a>
-            <a href="">Kontakt</a>
+            <button onclick="showModal()">Kontakt</button>
         </nav>
     </header>
+
+    <div class="modal-bg_fade" id="contact-modal_win">
+        <div class="contact-window">
+            <span class="close-button" onclick="hideModal()">&times;</span>
+            <h2 class="contact-h2">Kontakt na mňa</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p">E-mail: marek.hornak@student.spseke.sk<br>Tel. č: 421 ??? ??? ???<br>Firma: Salamander Corporation<br>Sídlo: Bratislava</p>
+            <h2 class="contact-h2">Ja a moja firma</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p_center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+            </p>
+            <div class="contact-avatar_pool">
+                <div class="my-photo_avatar" style="background-image: url(marekos.png); background-size: cover;"></div>
+                <div class="my-photo_avatar" style="background-image: url(logo_salamander1.jpg); background-size: cover;"></div>
+            </div>
+            <h2 class="contact-h2">Sociálne odkazy</h2>
+            <div class="contact-window_underline"></div>
+            <div class="social-media_buttons">
+                <img src="facebook.png" alt="">
+                <img src="gmail.png" alt="">
+                <img src="youtube.png" alt="">
+                <img src="pinterest.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="introdution">
@@ -26,7 +57,7 @@
         </div>
 
         <section>
-            <h2>Ako to funguje</h2>
+            <h2>Čo to je</h2>
             <div class="main-text_underline"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam atque explicabo debitis pariatur commodi et nihil adipisci voluptates!
@@ -38,7 +69,7 @@
         </section>
 
         <section class="main-text_align_right">
-            <h2>Ako to funguje</h2>
+            <h2>David Belle</h2>
             <div class="main-text_underline_right"></div>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -51,7 +82,7 @@
         </section>
 
         <section>
-            <h2>Ako to funguje</h2>
+            <h2>Z histórie</h2>
             <div class="main-text_underline"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam atque explicabo debitis pariatur commodi et nihil adipisci voluptates!
@@ -63,7 +94,7 @@
         </section>
 
         <section class="main-text_align_right">
-            <h2>Ako to funguje</h2>
+            <h2>Parkour vs. Freerun</h2>
             <div class="main-text_underline_right"></div>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -75,14 +106,14 @@
             </p>
         </section>
 
-        <h2 class="center-offer_text">Ponuka</h2>
+        <h2 class="center-offer_text">Parkourová výbava</h2>
         <div class="center-offer_underline"></div>
 
         <section class="cards-offer">
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">Obuv</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <img src="shoes.png" alt="parkour" class="card-offer_image">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Placeat illum ab nemo ut pariatur deserunt tempore iusto alias,
                     officiis sapiente quasi saepe voluptatibus velit ipsa minus a sed accusantium veniam?
@@ -90,9 +121,9 @@
             </article>
 
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">Tepláky</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <img src="trousers.png" alt="parkour" class="card-offer_image">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Placeat illum ab nemo ut pariatur deserunt tempore iusto alias,
                     officiis sapiente quasi saepe voluptatibus velit ipsa minus a sed accusantium veniam?
@@ -100,9 +131,9 @@
             </article>
 
             <article>
-                <h3 class="card-offer_h3">Nieco</h3>
+                <h3 class="card-offer_h3">Tričko</h3>
                 <div class="card-offer_underline"></div>
-                <img src="parkour1.png" alt="parkour" class="card-offer_image">
+                <img src="t-shirt.png" alt="parkour" class="card-offer_image">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Placeat illum ab nemo ut pariatur deserunt tempore iusto alias,
                     officiis sapiente quasi saepe voluptatibus velit ipsa minus a sed accusantium veniam?
@@ -112,6 +143,8 @@
     </main>
 
     <footer>Webdesign &copy; Marek Horňak</footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>

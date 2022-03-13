@@ -1,6 +1,8 @@
 $pozadie: linear-gradient(36deg,  pink, orange, violet, purple);
 $pozadie_obratene: linear-gradient(36deg,  purple, violet, orange, pink);
 $purple: rgba(172, 0, 172, 0.9);
+$dark_back: rgb(40, 40, 40);
+$orange_fade: rgba(255, 166, 0, 0.5);
 
 header {
     width: 100%;
@@ -19,7 +21,7 @@ header {
         grid-gap: 5vw;
         margin-right: 5vw;
         margin-left: 15vw;
-        a {
+        a, button {
             padding: 1.2vw;
             background: rgb(40, 40, 40);
             text-decoration: none;
@@ -29,9 +31,17 @@ header {
             text-align: center;
             font-size: 20px;
             &:hover {
-                background: orange;
-                color: rgb(40, 40, 40);
+                background: $orange_fade;
+                color: black;
             }
+            &:active {
+                background: red;
+                border: 3px solid red;
+            }
+        }
+        .navbar-a_active {
+            background-color: orange;
+            color: black;
         }
     }
 }
@@ -46,11 +56,92 @@ body {
     background: $pozadie;
     font-family: calibri;
     background-attachment: fixed;
+    .modal-bg_fade {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        .contact-window {
+            position: absolute;
+            top: 20vw;
+            left: 6vw;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background: $dark_back;
+            padding: 4vw;
+            border-radius: 2vw;
+            .close-button {
+                cursor: pointer;
+                font-size: 5vw;
+                position: relative;
+                color: orange;
+                float: right;
+                &:hover {
+                    color: red;
+                }
+            }
+            .contact-window_underline {
+                width: 30vw;
+                height: 6px;
+                border-radius: 3px;
+                background: $pozadie;
+                margin-left: auto;
+                margin-right: auto;
+                &:hover {
+                    background: $pozadie_obratene;
+                }
+            }
+            .contact-h2 {
+                text-align: center;
+                color: white;
+                font-size: 3vw;
+            }
+            .contact-p {
+                color: white;
+                font-size: 1.8vw;
+            }
+            .contact-p_center {
+                color: white;
+                font-size: 1.8vw;
+                text-align: center;
+            }
+            .contact-avatar_pool {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 15vw);
+                column-gap: 6vw;
+                justify-content: center;
+                .my-photo_avatar {
+                    width: 15vw;
+                    height: 15vw;
+                    background-color: white;
+                    margin: 1vw;
+                    border-radius: 50%;
+                }
+            }
+            .social-media_buttons {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 10vw);
+                column-gap: 4vw;
+                justify-content: center;
+                margin-top: 3vw;
+                img {
+                    width: 10vw;
+                }
+            }
+        }
+    }
 }
 
 main {
     border-radius: 2.5vw;
-    background: rgb(40, 40, 40);
+    background: $dark_back;
     color: white;
     margin-left: auto;
     margin-right: auto;
@@ -58,12 +149,71 @@ main {
     margin-bottom: 5vw;
     padding: 3vw;
     width: 85vw;
+    .download-pool {
+        width: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1vw;
+        margin-top: 2vw;
+        padding: 1vw;
+        .download-button {
+            width: 100%;
+            padding: 1vw;
+            background: $dark_back;
+            color: white;
+            border: 2px solid orange;
+            border-radius: 3px;
+            &:hover {
+                background: $orange_fade;
+                color: black;
+            }
+        }
+    }
+    .form-data_pool {
+        width: 90%;
+        padding: 2vw;
+        margin: 2vw;
+        .input-textarea {
+            height: 8vw;
+        }
+        .form-input_field {
+            border: 2px solid orange;
+            border-radius: 3px;
+            background: $dark_back;
+            padding: 0.5vw;
+            width: 55vw;
+            color: white;
+            margin-top: 0.5vw;
+            margin-bottom: 0.5vw;
+        }
+        .form-input_selection {
+            width: 20vw;
+        }
+        .input-form_button {
+            width: 56.5vw;
+            padding: 0.5vw;
+            margin-top: 2vw;
+            border: 2px solid orange;
+            border-radius: 3px;
+            background: $dark_back;
+            color: white;
+            &:hover {
+                background: $orange_fade;
+                color: white;
+            }
+            &:active {
+                background: red;
+                border: 2px solid red;
+                color: black;
+            }
+        }
+    }
     section {
         .main-text_underline {
             background: $pozadie;
             width: 30vw;
-            height: 6px;  //1.2vw
-            border-radius: 3px;  //0.6vw
+            height: 6px;
+            border-radius: 3px;
             &:hover {
                 background: $pozadie_obratene;
             }
@@ -72,8 +222,8 @@ main {
             float: right;
             background: $pozadie;
             width: 30vw;
-            height: 6px;  //1.2vw
-            border-radius: 3px;  //0.6vw
+            height: 6px;
+            border-radius: 3px;
             &:hover {
                 background: $pozadie_obratene;
             }
@@ -116,23 +266,35 @@ main {
             border: 2px solid orange;
             border-radius: 6px;
             padding: 1vw;
-            background: rgb(40, 40, 40);
+            background: $dark_back;
             color: white;
             margin-bottom: 0.4vw;
+            font-size: 15px;
             &:hover {
-                background: orange;
+                background: $orange_fade;
                 color: black;
             }
+            &:active {
+                background: red;
+                border: 2px solid red;
+            }
+        }
+        .switch-active_button {
+            background: orange;
+            color: black;
         }
     }
     .properties-text_content {
         text-align: center;
+        .properties-tab_content {
+            display: none;
+        }
     }
-    .center-properties_h2 {
+    .center-properties_h2, .center-form_h2 {
         text-align: center;
         margin-top: 5vw;
     }
-    .center-properties_underline {
+    .center-properties_underline, .center-form_underline {
         background: $pozadie;
         width: 30vw;
         height: 6px;
@@ -146,13 +308,15 @@ main {
     .slideshow-prevnext_buttons {
         .prev, .next {
             font-weight: bold;
-            font-size: larger;
-            color: black;
-            padding: 1.2vw;
+            font-size: 1.8vw;
+            color: orange;
+            padding: 0.5vw;
+            padding-right: 1vw;
+            padding-left: 1vw;
             border: 2px solid orange;
             border-radius: 8px;
             user-select: none;
-            margin-top: 1.4vw;
+            margin-top: 0.7vw;
             &:hover {
                 background: orange;
                 color: black;
@@ -160,42 +324,62 @@ main {
         }
         .prev {
             float: left;
-            margin-left: 12vw;
+            margin-left: 10vw;
         }
         .next {
             float: right;
-            margin-right: 12vw;
+            margin-right: 10vw;
         }
     }
     .slideshow-container {
-        width: 60vw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3vw;
         border-radius: 2vw;
+        margin-top: 3vw;
+        padding-bottom: 0;
         .slideshow-caption_text {
-            width: 60vw;
+            width: 100%;
             text-align: center;
-            top: 73vw;
-            position: absolute;
+            top: -59px;                    //fixnut polohu caption textu
+            position: relative;
             padding-top: 12px;
             padding-bottom: 12px;
             font-size: 1.8vw;
+            color: white;
+            background: rgba(40, 40, 40, 0.6);
+            border-radius: 0 0 2vw 2vw;
         }
     }
     .slideshow-dot_pool {
-        margin: 2vw;
+        margin: 1vw;
         .slideshow-dot {
-            width: 2vw;
-            height: 2vw;
+            width: 1.5vw;
+            height: 1.5vw;
+            border: 2px solid orange;
             border-radius: 50%;
-            background: orange;
+            background: $dark_back;
             margin: 1vw;
             display: inline-block;
+            &:hover {
+                background: $orange_fade;
+                border: 2px solid $orange_fade;
+            }
+            &:active {
+                background-color: red;
+                border: 2px solid red;
+            }
+        }
+        .slideshow-dot_active {
+            background: orange;
         }
     }
     .invisible-slides {
         display: none;
+        img {
+            width: 100%;
+            border-radius: 2vw;
+        }
     }
     .cards-offer {
         display: grid;
@@ -212,6 +396,10 @@ main {
             margin-bottom: 8%;
             border-radius: 18px;
             text-align: justify;
+            .img-silouette {
+                width: 100%;
+                margin-top: 2vw;
+            }
             .card-offer_h3 {
                 text-align: center;
                 margin: 2%;
@@ -226,8 +414,9 @@ main {
                 }
             }
             .card-offer_image {
+                margin-top: 2vw;
                 display: block;
-                width: 60%;
+                width: 70%;
                 margin-left: auto;
                 margin-right: auto;
             }

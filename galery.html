@@ -5,19 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Galéria parkouru</title>
 </head>
 <body>
 
     <header>
-        <img src="parkour1.png" alt="parkour">
+        <a href="index.html"><img src="parkour1.png" alt="parkour"></a>
         <nav>
             <a href="index.html">Úvod</a>
             <a href="description.html">Popis</a>
-            <a href="galery.html">Galéria</a>
-            <a href="">Kontakt</a>
+            <a href="galery.html" class="navbar-a_active">Galéria</a>
+            <button onclick="showModal()">Kontakt</button>
         </nav>
     </header>
+
+    <div class="modal-bg_fade" id="contact-modal_win">
+        <div class="contact-window">
+            <span class="close-button" onclick="hideModal()">&times;</span>
+            <h2 class="contact-h2">Kontakt na mňa</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p">E-mail: marek.hornak@student.spseke.sk<br>Tel. č: 421 ??? ??? ???<br>Firma: Salamander Corporation<br>Sídlo: Bratislava</p>
+            <h2 class="contact-h2">Ja a moja firma</h2>
+            <div class="contact-window_underline"></div>
+            <p class="contact-p_center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Amet perspiciatis, aut cum vitae eos culpa sit dolore quae enim corporis
+                ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
+            </p>
+            <div class="contact-avatar_pool">
+                <div class="my-photo_avatar" style="background-image: url(marekos.png); background-size: cover;"></div>
+                <div class="my-photo_avatar" style="background-image: url(logo_salamander1.jpg); background-size: cover;"></div>
+            </div>
+            <h2 class="contact-h2">Sociálne odkazy</h2>
+            <div class="contact-window_underline"></div>
+            <div class="social-media_buttons">
+                <img src="facebook.png" alt="">
+                <img src="gmail.png" alt="">
+                <img src="youtube.png" alt="">
+                <img src="pinterest.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <main>
         <div class="introdution">
@@ -30,27 +61,27 @@
 
         <div class="slideshow-container">
             <div class="invisible-slides">
-                <img src="parkour1.png" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <img src="back1.jpg" alt="">
+                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
             </div>
             <div class="invisible-slides">
-                <img src="parkour.png" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <img src="cat1.jpg" alt="">
+                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
             </div>
             <div class="invisible-slides">
-                <img src="parkour1.png" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <img src="drop1.jpg" alt="">
+                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
             </div>
             <div class="invisible-slides">
-                <img src="parkour.png" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <img src="jump1.jpg" alt="">
+                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
             </div>
             <div class="invisible-slides">
-                <img src="parkour1.png" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <img src="skok1.jpg" alt="">
+                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
             </div>
             <div class="invisible-slides">
-                <img src="parkour.png" alt="">
+                <img src="vault1.jpg" alt="">
                 <div class="slideshow-caption_text">Obrázok</div>
             </div>
         </div>
@@ -58,17 +89,42 @@
         <br>
 
         <div class="slideshow-prevnext_buttons">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094; &#10094; &#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095; &#10095; &#10095;</a>
         </div>
 
         <div class="slideshow-dot_pool" style="text-align:center">
-            <span class="slideshow-dot" onclick="currentSlide(1)"></span> 
-            <span class="slideshow-dot" onclick="currentSlide(2)"></span> 
-            <span class="slideshow-dot" onclick="currentSlide(3)"></span>
-            <span class="slideshow-dot" onclick="currentSlide(4)"></span> 
-            <span class="slideshow-dot" onclick="currentSlide(5)"></span> 
-            <span class="slideshow-dot" onclick="currentSlide(6)"></span> 
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(1)"></span> 
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(2)"></span> 
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(3)"></span>
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(4)"></span> 
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(5)"></span> 
+            <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(6)"></span> 
+        </div>
+
+        <h2 class="center-form_h2">Kontaktný formulár</h2>
+        <div class="center-form_underline"></div>
+        <form action="active.html" class="form-data_pool">
+            <input type="text" value="Zadajte svoj e-mail:" class="form-input_field"><br>
+            <input type="text" value="Zadajte krajinu:" class="form-input_field"><br>
+            <label for="">Kto som</label><br>
+            <select name="" id="" class="form-input_field form-input_selection">
+                <option value="">--</option>
+                <option value="">Parkourista</option>
+                <option value="">Nadšenec parkouru</option>
+                <option value="">Nováčik</option>
+                <option value="">Neznalý</option>
+            </select><br>
+            <label for="">Čo potrebujete?</label><br>
+            <textarea class="form-input_field input-textarea">Vaša správa</textarea>
+            <button class="input-form_button" type="submit">Odoslať správu</button>
+        </form>
+
+        <h2 class="center-form_h2">Na stiahnutie</h2>
+        <div class="center-form_underline"></div>
+        <div class="download-pool">
+            <a href="parkour.docx" download="parkour-word"><button class="download-button">Dokument o parkoure</button></a>
+            <a href="Parkour.pptx" download="parkour-powerpoint"><button class="download-button">Prezentácia o parkoure</button></a>
         </div>
 
     </main>
