@@ -29,7 +29,6 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " slideshow-dot_active";
-
     }
 }
 
@@ -60,6 +59,7 @@ var modal = document.getElementById("contact-modal_win");
 
 function showModal() {
     modal.style.display = "block";
+    document.getElementById("caption-text").style.display = "none";
     dajakyText = document.getElementById("caption-text");
     
     if ( !dajakyText == undefined ) {
@@ -69,6 +69,7 @@ function showModal() {
 
 function hideModal() {
     modal.style.display = "none";
+    document.getElementById("caption-text").style.display = "block";
 
     dajakyText = document.getElementById("caption-text");
 
@@ -80,6 +81,7 @@ function hideModal() {
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      document.getElementById("caption-text").style.display = "block";
           dajakyText = document.getElementById("caption-text");
     
     if ( !dajakyText == undefined ) {
@@ -88,3 +90,19 @@ window.onclick = function(event) {
 
     }
   }
+
+var countDownDate = new Date("Apr 29, 2022 00:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
++ minutes + "m " + seconds + "s ";
+if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Šťastné výročie parkouru!!!";
+}
+}, 1000);

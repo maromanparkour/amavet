@@ -1,6 +1,6 @@
 $pozadie: linear-gradient(36deg,  pink, orange, violet, purple);
 $pozadie_obratene: linear-gradient(36deg,  purple, violet, orange, pink);
-$purple: rgba(172, 0, 172, 0.9);
+$purple: rgb(225, 0, 255);
 $dark_back: rgb(40, 40, 40);
 $orange_fade: rgba(255, 166, 0, 0.5);
 
@@ -21,7 +21,8 @@ header {
         grid-gap: 5vw;
         margin-right: 5vw;
         margin-left: 15vw;
-        a, button {
+        a {
+            cursor: pointer;
             padding: 1.2vw;
             background: rgb(40, 40, 40);
             text-decoration: none;
@@ -30,13 +31,14 @@ header {
             border-radius: 6px;
             text-align: center;
             font-size: 20px;
+            transition: 0.2s;
             &:hover {
                 background: $orange_fade;
                 color: black;
             }
             &:active {
-                background: red;
-                border: 3px solid red;
+                background: $purple;
+                border: 3px solid $purple;
             }
         }
         .navbar-a_active {
@@ -49,6 +51,7 @@ header {
 
 
 body {
+    overflow-x: hidden;
     display: grid;
     grid-template-rows: 19vw 1fr auto;
     padding: 0;
@@ -56,6 +59,14 @@ body {
     background: $pozadie;
     font-family: calibri;
     background-attachment: fixed;
+    font-size: large;
+    b, i {
+        color: orange;
+        transition: 0.2s;
+        &:hover {
+            font-size: 20px;
+        }
+    }
     .modal-bg_fade {
         display: none;
         position: fixed;
@@ -81,6 +92,7 @@ body {
                 position: relative;
                 color: orange;
                 float: right;
+                transition: 0.2s;
                 &:hover {
                     color: red;
                 }
@@ -92,6 +104,7 @@ body {
                 background: $pozadie;
                 margin-left: auto;
                 margin-right: auto;
+                transition: 0.2s;
                 &:hover {
                     background: $pozadie_obratene;
                 }
@@ -122,6 +135,11 @@ body {
                     background-color: white;
                     margin: 1vw;
                     border-radius: 50%;
+                    transition: 0.3s;
+                    &:hover {
+                        width: 18vw;
+                        height: 18vw;
+                    }
                 }
             }
             .social-media_buttons {
@@ -133,6 +151,11 @@ body {
                 margin-top: 3vw;
                 img {
                     width: 10vw;
+                    transition: 0.3s;
+                    &:hover {
+                        width: 8vw;
+                        height: 8vw;
+                    }
                 }
             }
         }
@@ -149,13 +172,24 @@ main {
     margin-bottom: 5vw;
     padding: 3vw;
     width: 85vw;
+    .countdown {
+        padding: 2vw;
+        text-align: center;
+        font-size: 4vw;
+        transition: 0.5s;
+        &:hover {
+            font-size: 5vw;
+        }
+    }
     .download-pool {
         width: 1fr;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1vw;
         margin-top: 2vw;
-        padding: 1vw;
+        padding: 1.5vw;
+        background: rgb(30, 30, 30);
+        border-radius: 2vw;
         .download-button {
             width: 100%;
             padding: 1vw;
@@ -163,6 +197,7 @@ main {
             color: white;
             border: 2px solid orange;
             border-radius: 3px;
+            transition: 0.2s;
             &:hover {
                 background: $orange_fade;
                 color: black;
@@ -173,6 +208,8 @@ main {
         width: 90%;
         padding: 2vw;
         margin: 2vw;
+        background: rgb(30, 30, 30);
+        border-radius: 2vw;
         .input-textarea {
             height: 8vw;
         }
@@ -181,7 +218,7 @@ main {
             border-radius: 3px;
             background: $dark_back;
             padding: 0.5vw;
-            width: 55vw;
+            width: 97%;
             color: white;
             margin-top: 0.5vw;
             margin-bottom: 0.5vw;
@@ -190,20 +227,21 @@ main {
             width: 20vw;
         }
         .input-form_button {
-            width: 56.5vw;
+            width: 99.5%;
             padding: 0.5vw;
             margin-top: 2vw;
             border: 2px solid orange;
             border-radius: 3px;
             background: $dark_back;
             color: white;
+            transition: 0.2s;
             &:hover {
                 background: $orange_fade;
                 color: white;
             }
             &:active {
-                background: red;
-                border: 2px solid red;
+                background: $purple;
+                border: 2px solid $purple;
                 color: black;
             }
         }
@@ -214,6 +252,7 @@ main {
             width: 30vw;
             height: 6px;
             border-radius: 3px;
+            transition: 0.2s;
             &:hover {
                 background: $pozadie_obratene;
             }
@@ -224,6 +263,7 @@ main {
             width: 30vw;
             height: 6px;
             border-radius: 3px;
+            transition: 0.2s;
             &:hover {
                 background: $pozadie_obratene;
             }
@@ -236,6 +276,7 @@ main {
         border-radius: 3px;
         margin-left: auto;
         margin-right: auto;
+        transition: 0.2s;
         &:hover {
             background: $pozadie_obratene;
         }
@@ -251,6 +292,21 @@ main {
             font-size: 8vw;
             margin: 0;
         }
+        p {
+            a{
+                text-decoration: none;
+                color: orange;
+                font-size: 20px;
+                transition: 0.2s;
+                &:hover {
+                    color: $purple;
+                    font-weight: bold;
+                }
+                &:active {
+                    color: $purple;
+                }
+            }
+        }
     }
     .main-text_align_right {
         text-align: right;
@@ -263,6 +319,7 @@ main {
         column-gap: 0.5vw;
         row-gap: 0.5vw;
         .switch {
+            cursor: pointer;
             border: 2px solid orange;
             border-radius: 6px;
             padding: 1vw;
@@ -270,13 +327,14 @@ main {
             color: white;
             margin-bottom: 0.4vw;
             font-size: 15px;
+            transition: 0.2s;
             &:hover {
                 background: $orange_fade;
                 color: black;
             }
             &:active {
-                background: red;
-                border: 2px solid red;
+                background: $purple;
+                border: 2px solid $purple;
             }
         }
         .switch-active_button {
@@ -301,6 +359,7 @@ main {
         border-radius: 3px;
         margin-left: auto;
         margin-right: auto;
+        transition: 0.2s;
         &:hover {
             background: $pozadie_obratene;
         }
@@ -317,9 +376,14 @@ main {
             border-radius: 8px;
             user-select: none;
             margin-top: 0.7vw;
+            transition: 0.2s;
             &:hover {
                 background: orange;
                 color: black;
+            }
+            &:active {
+                background: $purple;
+                border: 2px solid $purple;
             }
         }
         .prev {
@@ -333,23 +397,12 @@ main {
     }
     .slideshow-container {
         width: 100%;
+        height: 36vw;
         margin-left: auto;
         margin-right: auto;
         border-radius: 2vw;
         margin-top: 3vw;
         padding-bottom: 0;
-        .slideshow-caption_text {
-            width: 100%;
-            text-align: center;
-            top: -59px;                    //fixnut polohu caption textu
-            position: relative;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            font-size: 1.8vw;
-            color: white;
-            background: rgba(40, 40, 40, 0.6);
-            border-radius: 0 0 2vw 2vw;
-        }
     }
     .slideshow-dot_pool {
         margin: 1vw;
@@ -361,13 +414,14 @@ main {
             background: $dark_back;
             margin: 1vw;
             display: inline-block;
+            transition: 0.2s;
             &:hover {
                 background: $orange_fade;
                 border: 2px solid $orange_fade;
             }
             &:active {
-                background-color: red;
-                border: 2px solid red;
+                background: $purple;
+                border: 2px solid $purple;
             }
         }
         .slideshow-dot_active {
@@ -379,6 +433,18 @@ main {
         img {
             width: 100%;
             border-radius: 2vw;
+        }
+        .slideshow-caption_text {
+            width: 100%;
+            text-align: center;
+            top: -51px;                    //fixnut polohu caption textu
+            position: relative;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 18px;
+            color: white;
+            background: rgba(40, 40, 40, 0.6);
+            border-radius: 0 0 2vw 2vw;
         }
     }
     .cards-offer {
@@ -409,6 +475,7 @@ main {
                 width: 100%;
                 height: 4px;
                 border-radius: 2px;
+                transition: 0.2s;
                 &:hover {
                     background: $pozadie_obratene;
                 }
@@ -419,6 +486,10 @@ main {
                 width: 70%;
                 margin-left: auto;
                 margin-right: auto;
+                transition: 0.4s;
+                &:hover {
+                    width: 100%;
+                }
             }
         }
     }
@@ -430,6 +501,7 @@ footer {
     color: white;
     width: 100%;
     font-size: x-large;
+    
 }
 
 header, footer {
@@ -440,7 +512,6 @@ header, footer {
 @media screen and (min-width: 250px){
     main {
         width: 85vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -454,7 +525,6 @@ header, footer {
 @media screen and (min-width: 530px) {
     main {
         width: 75vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr)
         }
@@ -468,7 +538,6 @@ header, footer {
 @media screen and (min-width: 650px) {
     main {
         width: 85vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -482,7 +551,6 @@ header, footer {
 @media screen and (min-width: 950px) {
     main {
         width: 75vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
@@ -496,7 +564,6 @@ header, footer {
 @media screen and (min-width: 1300px) {
     main {
         width: 65vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
@@ -506,11 +573,10 @@ header, footer {
     }
 }
 
-//
+//Velke obrazovky
 @media screen and (min-width: 1500px) {
     main {
         width: 80vw;
-        font-size: large;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }

@@ -27,7 +27,8 @@ header nav {
   margin-left: 15vw;
 }
 
-header nav a, header nav button {
+header nav a {
+  cursor: pointer;
   padding: 1.2vw;
   background: #282828;
   text-decoration: none;
@@ -36,16 +37,18 @@ header nav a, header nav button {
   border-radius: 6px;
   text-align: center;
   font-size: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-header nav a:hover, header nav button:hover {
+header nav a:hover {
   background: rgba(255, 166, 0, 0.5);
   color: black;
 }
 
-header nav a:active, header nav button:active {
-  background: red;
-  border: 3px solid red;
+header nav a:active {
+  background: #e100ff;
+  border: 3px solid #e100ff;
 }
 
 header nav .navbar-a_active {
@@ -54,6 +57,7 @@ header nav .navbar-a_active {
 }
 
 body {
+  overflow-x: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 19vw 1fr auto;
@@ -63,6 +67,17 @@ body {
   background: linear-gradient(36deg, pink, orange, violet, purple);
   font-family: calibri;
   background-attachment: fixed;
+  font-size: large;
+}
+
+body b, body i {
+  color: orange;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body b:hover, body i:hover {
+  font-size: 20px;
 }
 
 body .modal-bg_fade {
@@ -94,6 +109,8 @@ body .modal-bg_fade .contact-window .close-button {
   position: relative;
   color: orange;
   float: right;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 body .modal-bg_fade .contact-window .close-button:hover {
@@ -107,6 +124,8 @@ body .modal-bg_fade .contact-window .contact-window_underline {
   background: linear-gradient(36deg, pink, orange, violet, purple);
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 body .modal-bg_fade .contact-window .contact-window_underline:hover {
@@ -149,6 +168,13 @@ body .modal-bg_fade .contact-window .contact-avatar_pool .my-photo_avatar {
   background-color: white;
   margin: 1vw;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .modal-bg_fade .contact-window .contact-avatar_pool .my-photo_avatar:hover {
+  width: 18vw;
+  height: 18vw;
 }
 
 body .modal-bg_fade .contact-window .social-media_buttons {
@@ -167,6 +193,13 @@ body .modal-bg_fade .contact-window .social-media_buttons {
 
 body .modal-bg_fade .contact-window .social-media_buttons img {
   width: 10vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .modal-bg_fade .contact-window .social-media_buttons img:hover {
+  width: 8vw;
+  height: 8vw;
 }
 
 main {
@@ -181,6 +214,18 @@ main {
   width: 85vw;
 }
 
+main .countdown {
+  padding: 2vw;
+  text-align: center;
+  font-size: 4vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .countdown:hover {
+  font-size: 5vw;
+}
+
 main .download-pool {
   width: 1fr;
   display: -ms-grid;
@@ -190,7 +235,9 @@ main .download-pool {
   -webkit-column-gap: 1vw;
           column-gap: 1vw;
   margin-top: 2vw;
-  padding: 1vw;
+  padding: 1.5vw;
+  background: #1e1e1e;
+  border-radius: 2vw;
 }
 
 main .download-pool .download-button {
@@ -200,6 +247,8 @@ main .download-pool .download-button {
   color: white;
   border: 2px solid orange;
   border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .download-pool .download-button:hover {
@@ -211,6 +260,8 @@ main .form-data_pool {
   width: 90%;
   padding: 2vw;
   margin: 2vw;
+  background: #1e1e1e;
+  border-radius: 2vw;
 }
 
 main .form-data_pool .input-textarea {
@@ -222,7 +273,7 @@ main .form-data_pool .form-input_field {
   border-radius: 3px;
   background: #282828;
   padding: 0.5vw;
-  width: 55vw;
+  width: 97%;
   color: white;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
@@ -233,13 +284,15 @@ main .form-data_pool .form-input_selection {
 }
 
 main .form-data_pool .input-form_button {
-  width: 56.5vw;
+  width: 99.5%;
   padding: 0.5vw;
   margin-top: 2vw;
   border: 2px solid orange;
   border-radius: 3px;
   background: #282828;
   color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .form-data_pool .input-form_button:hover {
@@ -248,8 +301,8 @@ main .form-data_pool .input-form_button:hover {
 }
 
 main .form-data_pool .input-form_button:active {
-  background: red;
-  border: 2px solid red;
+  background: #e100ff;
+  border: 2px solid #e100ff;
   color: black;
 }
 
@@ -258,6 +311,8 @@ main section .main-text_underline {
   width: 30vw;
   height: 6px;
   border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main section .main-text_underline:hover {
@@ -270,6 +325,8 @@ main section .main-text_underline_right {
   width: 30vw;
   height: 6px;
   border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main section .main-text_underline_right:hover {
@@ -283,6 +340,8 @@ main .center-offer_underline {
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .center-offer_underline:hover {
@@ -304,6 +363,23 @@ main .introdution h1 {
   margin: 0;
 }
 
+main .introdution p a {
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .introdution p a:hover {
+  color: #e100ff;
+  font-weight: bold;
+}
+
+main .introdution p a:active {
+  color: #e100ff;
+}
+
 main .main-text_align_right {
   text-align: right;
 }
@@ -322,6 +398,7 @@ main .properties-button_pool {
 }
 
 main .properties-button_pool .switch {
+  cursor: pointer;
   border: 2px solid orange;
   border-radius: 6px;
   padding: 1vw;
@@ -329,6 +406,8 @@ main .properties-button_pool .switch {
   color: white;
   margin-bottom: 0.4vw;
   font-size: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .properties-button_pool .switch:hover {
@@ -337,8 +416,8 @@ main .properties-button_pool .switch:hover {
 }
 
 main .properties-button_pool .switch:active {
-  background: red;
-  border: 2px solid red;
+  background: #e100ff;
+  border: 2px solid #e100ff;
 }
 
 main .properties-button_pool .switch-active_button {
@@ -366,6 +445,8 @@ main .center-properties_underline, main .center-form_underline {
   border-radius: 3px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .center-properties_underline:hover, main .center-form_underline:hover {
@@ -386,11 +467,18 @@ main .slideshow-prevnext_buttons .prev, main .slideshow-prevnext_buttons .next {
       -ms-user-select: none;
           user-select: none;
   margin-top: 0.7vw;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .slideshow-prevnext_buttons .prev:hover, main .slideshow-prevnext_buttons .next:hover {
   background: orange;
   color: black;
+}
+
+main .slideshow-prevnext_buttons .prev:active, main .slideshow-prevnext_buttons .next:active {
+  background: #e100ff;
+  border: 2px solid #e100ff;
 }
 
 main .slideshow-prevnext_buttons .prev {
@@ -405,24 +493,12 @@ main .slideshow-prevnext_buttons .next {
 
 main .slideshow-container {
   width: 100%;
+  height: 36vw;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2vw;
   margin-top: 3vw;
   padding-bottom: 0;
-}
-
-main .slideshow-container .slideshow-caption_text {
-  width: 100%;
-  text-align: center;
-  top: -59px;
-  position: relative;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 1.8vw;
-  color: white;
-  background: rgba(40, 40, 40, 0.6);
-  border-radius: 0 0 2vw 2vw;
 }
 
 main .slideshow-dot_pool {
@@ -437,6 +513,8 @@ main .slideshow-dot_pool .slideshow-dot {
   background: #282828;
   margin: 1vw;
   display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .slideshow-dot_pool .slideshow-dot:hover {
@@ -445,8 +523,8 @@ main .slideshow-dot_pool .slideshow-dot:hover {
 }
 
 main .slideshow-dot_pool .slideshow-dot:active {
-  background-color: red;
-  border: 2px solid red;
+  background: #e100ff;
+  border: 2px solid #e100ff;
 }
 
 main .slideshow-dot_pool .slideshow-dot_active {
@@ -460,6 +538,19 @@ main .invisible-slides {
 main .invisible-slides img {
   width: 100%;
   border-radius: 2vw;
+}
+
+main .invisible-slides .slideshow-caption_text {
+  width: 100%;
+  text-align: center;
+  top: -51px;
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px;
+  color: white;
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 0 0 2vw 2vw;
 }
 
 main .cards-offer {
@@ -500,6 +591,8 @@ main .cards-offer article .card-offer_underline {
   width: 100%;
   height: 4px;
   border-radius: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .cards-offer article .card-offer_underline:hover {
@@ -512,6 +605,12 @@ main .cards-offer article .card-offer_image {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main .cards-offer article .card-offer_image:hover {
+  width: 100%;
 }
 
 footer {
@@ -529,7 +628,6 @@ header, footer {
 @media screen and (min-width: 250px) {
   main {
     width: 85vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[2];
@@ -544,7 +642,6 @@ header, footer {
 @media screen and (min-width: 530px) {
   main {
     width: 75vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[2];
@@ -559,7 +656,6 @@ header, footer {
 @media screen and (min-width: 650px) {
   main {
     width: 85vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[3];
@@ -574,7 +670,6 @@ header, footer {
 @media screen and (min-width: 950px) {
   main {
     width: 75vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];
@@ -589,7 +684,6 @@ header, footer {
 @media screen and (min-width: 1300px) {
   main {
     width: 65vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];
@@ -604,7 +698,6 @@ header, footer {
 @media screen and (min-width: 1500px) {
   main {
     width: 80vw;
-    font-size: large;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="parkour.ico">
     <title>Galéria parkouru</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <a href="index.html">Úvod</a>
             <a href="description.html">Popis</a>
             <a href="galery.html" class="navbar-a_active">Galéria</a>
-            <button onclick="showModal()">Kontakt</button>
+            <a onclick="showModal()">Kontakt</a>
         </nav>
     </header>
 
@@ -36,16 +37,16 @@
                 ipsam natus repudiandae ratione magni est doloremque soluta quos. Omnis.
             </p>
             <div class="contact-avatar_pool">
-                <div class="my-photo_avatar" style="background-image: url(marekos.png); background-size: cover;"></div>
-                <div class="my-photo_avatar" style="background-image: url(logo_salamander1.jpg); background-size: cover;"></div>
+                <div class="my-photo_avatar" style="background-image: url(marekos.png); background-size: cover;" title="Ja"></div>
+                <div class="my-photo_avatar" style="background-image: url(logo_salamander1.jpg); background-size: cover;" title="Salamander"></div>
             </div>
             <h2 class="contact-h2">Sociálne odkazy</h2>
             <div class="contact-window_underline"></div>
             <div class="social-media_buttons">
-                <img src="facebook.png" alt="">
-                <img src="gmail.png" alt="">
-                <img src="youtube.png" alt="">
-                <img src="pinterest.png" alt="">
+                <a href="https://www.facebook.com/profile.php?id=100053396683373"><img src="facebook.png" alt="facebook" title="Facebook"></a>
+                <a href="mailto:marek.hornak@student.spseke.sk"><img src="gmail.png" alt="gmail" title="Gamil"></a>
+                <a href="https://www.youtube.com/"><img src="youtube.png" alt="youtube" title="Youtube"></a>
+                <a href="https://sk.pinterest.com/hornak0739/"><img src="pinterest.png" alt="pinterest" title="Pinterest"></a>
             </div>
         </div>
     </div>
@@ -62,27 +63,27 @@
         <div class="slideshow-container">
             <div class="invisible-slides">
                 <img src="back1.jpg" alt="">
-                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">Backflip layout</div>
             </div>
             <div class="invisible-slides">
                 <img src="cat1.jpg" alt="">
-                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">Cat - leap</div>
             </div>
             <div class="invisible-slides">
                 <img src="drop1.jpg" alt="">
-                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">Drop</div>
             </div>
             <div class="invisible-slides">
                 <img src="jump1.jpg" alt="">
-                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">Human - flag</div>
             </div>
             <div class="invisible-slides">
                 <img src="skok1.jpg" alt="">
-                <div class="slideshow-caption_text" id="caption-text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">T - hold</div>
             </div>
             <div class="invisible-slides">
                 <img src="vault1.jpg" alt="">
-                <div class="slideshow-caption_text">Obrázok</div>
+                <div class="slideshow-caption_text" id="caption-text">David Belle</div>
             </div>
         </div>
 
@@ -100,6 +101,12 @@
             <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(4)"></span> 
             <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(5)"></span> 
             <span class="slideshow-dot slideshow-dot_active" onclick="currentSlide(6)"></span> 
+        </div>
+
+        <div>
+            <h2 class="center-form_h2">Odpočet do narodenín Davida Bella</h2>
+            <div class="center-form_underline"></div>
+            <div class="countdown" id="countdown"></div>
         </div>
 
         <h2 class="center-form_h2">Kontaktný formulár</h2>
@@ -129,7 +136,7 @@
 
     </main>
 
-    <footer>Webdesign &copy; Marek Horňak</footer>
+    <footer onclick="showModal()">Webdesign &copy; Marek Horňak</footer>
 
     <script src="index.js"></script>
     
