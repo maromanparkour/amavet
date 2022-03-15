@@ -543,7 +543,7 @@ main .invisible-slides img {
 main .invisible-slides .slideshow-caption_text {
   width: 100%;
   text-align: center;
-  top: -50px;
+  top: -48px;
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -653,6 +653,7 @@ header, footer {
 @media screen and (min-width: 530px) {
   main {
     width: 75vw;
+    margin-top: 10vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[2];
@@ -676,6 +677,7 @@ header, footer {
 @media screen and (min-width: 650px) {
   main {
     width: 85vw;
+    margin-top: 5vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[3];
@@ -699,6 +701,7 @@ header, footer {
 @media screen and (min-width: 950px) {
   main {
     width: 75vw;
+    margin-top: 5vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];
@@ -722,6 +725,7 @@ header, footer {
 @media screen and (min-width: 1300px) {
   main {
     width: 65vw;
+    margin-top: 5vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];
@@ -745,6 +749,7 @@ header, footer {
 @media screen and (min-width: 1500px) {
   main {
     width: 80vw;
+    margin-top: 5vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[6];

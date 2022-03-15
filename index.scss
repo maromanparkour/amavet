@@ -437,7 +437,7 @@ main {
         .slideshow-caption_text {
             width: 100%;
             text-align: center;
-            top: -50px;                    //fixnut polohu caption textu
+            top: -48px;                    //fixnut polohu caption textu
             position: relative;
             padding-top: 12px;
             padding-bottom: 12px;
@@ -535,6 +535,7 @@ header, footer {
 @media screen and (min-width: 530px) {
     main {
         width: 75vw;
+        margin-top: 10vw;
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr)
         }
@@ -557,6 +558,7 @@ header, footer {
 @media screen and (min-width: 650px) {
     main {
         width: 85vw;
+        margin-top: 5vw;
         .properties-button_pool {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -579,6 +581,7 @@ header, footer {
 @media screen and (min-width: 950px) {
     main {
         width: 75vw;
+        margin-top: 5vw;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
@@ -601,6 +604,7 @@ header, footer {
 @media screen and (min-width: 1300px) {
     main {
         width: 65vw;
+        margin-top: 5vw;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
@@ -623,6 +627,7 @@ header, footer {
 @media screen and (min-width: 1500px) {
     main {
         width: 80vw;
+        margin-top: 5vw;
         .properties-button_pool {
             grid-template-columns: repeat(6, 1fr);
         }
