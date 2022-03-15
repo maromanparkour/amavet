@@ -57,6 +57,7 @@ header nav .navbar-a_active {
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
   display: -ms-grid;
   display: grid;
@@ -135,17 +136,15 @@ body .modal-bg_fade .contact-window .contact-window_underline:hover {
 body .modal-bg_fade .contact-window .contact-h2 {
   text-align: center;
   color: white;
-  font-size: 3vw;
 }
 
 body .modal-bg_fade .contact-window .contact-p {
   color: white;
-  font-size: 1.8vw;
+  font-size: large;
 }
 
 body .modal-bg_fade .contact-window .contact-p_center {
   color: white;
-  font-size: 1.8vw;
   text-align: center;
 }
 
@@ -179,6 +178,7 @@ body .modal-bg_fade .contact-window .contact-avatar_pool .my-photo_avatar:hover 
 
 body .modal-bg_fade .contact-window .social-media_buttons {
   width: 100%;
+  padding: 1.5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (10vw)[4];
@@ -543,7 +543,7 @@ main .invisible-slides img {
 main .invisible-slides .slideshow-caption_text {
   width: 100%;
   text-align: center;
-  top: -51px;
+  top: -50px;
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -619,6 +619,7 @@ footer {
   color: white;
   width: 100%;
   font-size: x-large;
+  cursor: pointer;
 }
 
 header, footer {
@@ -637,6 +638,15 @@ header, footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  header {
+    height: 18vw;
+  }
+  header img {
+    height: 18vw;
+  }
+  footer {
+    font-size: smaller;
+  }
 }
 
 @media screen and (min-width: 530px) {
@@ -650,6 +660,15 @@ header, footer {
   main .cards-offer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  header {
+    height: 10vw;
+  }
+  header img {
+    height: 10vw;
+  }
+  footer {
+    font-size: x-large;
   }
 }
 
@@ -665,6 +684,15 @@ header, footer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  header {
+    height: 10vw;
+  }
+  header img {
+    height: 10vw;
+  }
+  footer {
+    font-size: large;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -678,6 +706,15 @@ header, footer {
   main .cards-offer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  header {
+    height: 10vw;
+  }
+  header img {
+    height: 10vw;
+  }
+  footer {
+    font-size: x-large;
   }
 }
 
@@ -693,6 +730,15 @@ header, footer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  header {
+    height: 10vw;
+  }
+  header img {
+    height: 10vw;
+  }
+  footer {
+    font-size: x-large;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -706,6 +752,15 @@ header, footer {
   main .cards-offer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  header {
+    height: 10vw;
+  }
+  header img {
+    height: 10vw;
+  }
+  footer {
+    font-size: x-large;
   }
 }
 
