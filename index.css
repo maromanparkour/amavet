@@ -68,6 +68,7 @@ body {
   background: linear-gradient(36deg, pink, orange, violet, purple);
   font-family: calibri;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   font-size: large;
 }
 
