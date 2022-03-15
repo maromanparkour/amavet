@@ -51,7 +51,7 @@ header {
 
 
 body {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 19vw 1fr auto;
@@ -60,6 +60,8 @@ body {
     background: $pozadie;
     font-family: calibri;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: large;
     b, i {
         color: orange;
