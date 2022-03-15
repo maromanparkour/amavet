@@ -57,7 +57,7 @@ header nav .navbar-a_active {
 }
 
 body {
-  width: 100%;
+  width: 97%;
   overflow-x: hidden;
   display: -ms-grid;
   display: grid;
@@ -68,7 +68,6 @@ body {
   background: linear-gradient(36deg, pink, orange, violet, purple);
   font-family: calibri;
   background-attachment: fixed;
-  background-size: cover;
   background-repeat: no-repeat;
   font-size: large;
 }
