@@ -89,6 +89,7 @@ body {
             background: $dark_back;
             padding: 4vw;
             border-radius: 2vw;
+            z-index: 1000;
             .close-button {
                 cursor: pointer;
                 font-size: 5vw;
@@ -447,6 +448,7 @@ main {
             color: white;
             background: rgba(40, 40, 40, 0.6);
             border-radius: 0 0 2vw 2vw;
+            z-index: 0;
         }
     }
     .cards-offer {
