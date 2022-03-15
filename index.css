@@ -628,7 +628,8 @@ header, footer {
 
 @media screen and (min-width: 250px) {
   main {
-    width: 85vw;
+    width: 90vw;
+    margin-top: 20vw;
   }
   main .properties-button_pool {
     -ms-grid-columns: (1fr)[2];
@@ -645,7 +646,7 @@ header, footer {
     height: 18vw;
   }
   footer {
-    font-size: smaller;
+    font-size: large;
   }
 }
 

@@ -511,7 +511,8 @@ header, footer {
 //Mobil vyska
 @media screen and (min-width: 250px){
     main {
-        width: 85vw;
+        width: 90vw;
+        margin-top: 20vw;
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -526,7 +527,7 @@ header, footer {
         }
     }
     footer {
-        font-size: smaller;
+        font-size: large;
     }
 }
 
