@@ -57,7 +57,7 @@ header nav .navbar-a_active {
 }
 
 body {
-  width: 97%;
+  width: 100%;
   overflow-x: hidden;
   display: -ms-grid;
   display: grid;
