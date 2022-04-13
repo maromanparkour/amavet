@@ -652,7 +652,7 @@ header, footer {
   footer {
     font-size: large;
   }
-  nav {
+  header nav {
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
   }
@@ -672,10 +672,10 @@ header, footer {
         grid-template-columns: 1fr;
   }
   header {
-    height: 10vw;
+    height: 20vw;
   }
   header img {
-    height: 10vw;
+    height: 20vw;
   }
   footer {
     font-size: x-large;
@@ -696,10 +696,10 @@ header, footer {
         grid-template-columns: repeat(3, 1fr);
   }
   header {
-    height: 10vw;
+    height: 20vw;
   }
   header img {
-    height: 10vw;
+    height: 20vw;
   }
   footer {
     font-size: large;

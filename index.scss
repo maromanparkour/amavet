@@ -533,8 +533,10 @@ header, footer {
     footer {
         font-size: large;
     }
-    nav {
-        grid-template-rows: repeat(2, 1fr);
+    header {
+        nav {
+            grid-template-rows: repeat(2, 1fr);
+        }
     }
 }
 
@@ -551,9 +553,9 @@ header, footer {
         }
     }
     header {
-        height: 10vw;
+        height: 20vw;
         img {
-            height: 10vw;
+            height: 20vw;
         }
     }
     footer {
@@ -574,9 +576,9 @@ header, footer {
         }
     }
     header {
-        height: 10vw;
+        height: 20vw;
         img {
-            height: 10vw;
+            height: 20vw;
         }
     }
     footer {
