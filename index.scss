@@ -534,7 +534,6 @@ header, footer {
         font-size: large;
     }
     nav {
-        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 }
