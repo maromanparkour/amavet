@@ -19,8 +19,7 @@ header {
         justify-content: stretch;
         align-content: center;
         grid-gap: 5vw;
-        margin-right: 5vw;
-        margin-left: 15vw;
+        width: auto;
         a {
             cursor: pointer;
             padding: 1.2vw;
@@ -51,8 +50,8 @@ header {
 
 
 body {
-    width: 100%;
-    overflow-x: hidden;
+    width: 97%;
+    overflow-x: unset;
     display: grid;
     grid-template-rows: 19vw 1fr auto;
     padding: 0;
@@ -513,10 +512,10 @@ header, footer {
 }
 
 //Mobil vyska
-@media screen and (min-width: 250px){
+@media screen and (min-width: 200px){
     main {
-        width: 90vw;
-        margin-top: 20vw;
+        width: 80vw;
+        margin-top: 35vw;
         .properties-button_pool {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -525,18 +524,16 @@ header, footer {
         }
     }
     header {
-        height: 18vw;
+        height: 30vw;
         img {
-            height: 18vw;
+            height: 20vw;
+        }
+        nav {
+            grid-template-columns: auto auto;
         }
     }
     footer {
         font-size: large;
-    }
-    header {
-        nav {
-            grid-template-rows: repeat(2, 1fr);
-        }
     }
 }
 
@@ -553,9 +550,12 @@ header, footer {
         }
     }
     header {
-        height: 20vw;
+        height: 10vw;
         img {
-            height: 20vw;
+            height: 10vw;
+        }
+        nav {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
     footer {
@@ -576,9 +576,12 @@ header, footer {
         }
     }
     header {
-        height: 20vw;
+        height: 10vw;
         img {
-            height: 20vw;
+            height: 10vw;
+        }
+        nav {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
     footer {
